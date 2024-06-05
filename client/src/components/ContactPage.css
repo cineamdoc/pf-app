@@ -1,0 +1,76 @@
+/* .contact-page 클래스 정의: 페이지의 레이아웃과 스타일을 설정 */
+.contact-page {
+    display: flex; /* Flexbox를 사용하여 레이아웃 설정 */
+    flex-direction: row; /* 요소들을 가로 방향으로 배치 */
+    min-height: calc(100vh - 120px); /* 페이지의 최소 높이를 설정 (header와 footer의 높이를 제외한 값) */
+    box-sizing: border-box; /* 박스 모델의 크기를 border-box로 설정 */
+    background-color: black; /* 배경색을 검은색으로 설정 */
+    padding-top: 60px; /* header 높이만큼 상단 패딩 추가 */
+    padding-bottom: 60px; /* footer 높이만큼 하단 패딩 추가 */
+}
+
+/* .sidebar 클래스 정의: 사이드바의 스타일을 설정 */
+.sidebar {
+    width: 200px; /* 너비를 200px로 설정 */
+    background-color: #111; /* 배경색을 어두운 회색으로 설정 */
+    display: flex; /* Flexbox를 사용하여 레이아웃 설정 */
+    flex-direction: column; /* 요소들을 세로 방향으로 배치 */
+    padding-top: 20px; /* 상단 패딩을 20px로 설정 */
+    transition: all 0.3s ease; /* 부드러운 전환을 위한 트랜지션 효과 추가 */
+}
+
+/* .sidebar-item 클래스 정의: 사이드바 항목의 스타일을 설정 */
+.sidebar-item {
+    color: #fff; /* 텍스트 색상을 흰색으로 설정 */
+    padding: 15px 20px; /* 상하 15px, 좌우 20px 패딩 설정 */
+    text-decoration: none; /* 텍스트 밑줄 제거 */
+    display: block; /* 블록 요소로 설정 */
+}
+
+/* .sidebar-item.active 및 .sidebar-item:hover 클래스 정의: 활성화되거나 호버 상태일 때 스타일을 설정 */
+.sidebar-item.active, .sidebar-item:hover {
+    background-color: #575757; /* 배경색을 밝은 회색으로 설정 */
+}
+
+/* .main-content 클래스 정의: 메인 콘텐츠 영역의 스타일을 설정 */
+.main-content {
+    flex: 1; /* Flexbox 아이템의 성장 비율을 1로 설정 */
+    margin-left: 30px; /* 좌측 마진을 30px로 설정 */
+    margin-right: 30px; /* 우측 마진을 30px로 설정 */
+    padding: 20px; /* 내부 여백을 20px로 설정 */
+    color: #fff; /* 텍스트 색상을 흰색으로 설정 */
+    background-color: #000; /* 배경색을 검은색으로 설정 */
+    display: flex; /* Flexbox를 사용하여 레이아웃 설정 */
+    flex-direction: column; /* 요소들을 세로 방향으로 배치 */
+    justify-content: flex-start; /* 세로 방향으로 시작점에 정렬 */
+    align-items: flex-start; /* 가로 방향으로 시작점에 정렬 */
+}
+
+/* h1 요소의 스타일을 설정 */
+h1 {
+    margin-top: 0; /* 상단 마진을 0으로 설정 */
+}
+
+/* .map-container 클래스 정의: 지도 컨테이너의 스타일을 설정 */
+.map-container {
+    width: 100%; /* 너비를 100%로 설정 */
+    height: 450px; /* 높이를 450px로 설정 */
+    border-radius: 10px; /* 모서리를 둥글게 설정 */
+    overflow: hidden; /* 넘치는 콘텐츠를 숨김 */
+    margin-top: 20px; /* 상단 마진을 20px로 설정 */
+}
+
+/* 반응형 웹 설정: 화면 너비가 800px 이하일 때 적용 */
+@media (max-width: 800px) {
+    /* .contact-page 클래스 정의: 페이지의 레이아웃과 스타일을 설정 */
+    .contact-page {
+        flex-direction: column; /* 요소들을 세로 방향으로 배치 */
+        padding-top: 60px; /* header 높이만큼 상단 패딩 추가 */
+        padding-bottom: 60px; /* footer 높이만큼 하단 패딩 추가 */
+    }
+
+    /* .sidebar 클래스 정의: 사이드바의 스타일을 설정 */
+    .sidebar {
+        display: none; /* 요소를 숨김 */
+    }
+}

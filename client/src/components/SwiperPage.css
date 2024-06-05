@@ -1,0 +1,174 @@
+/* .slideshow-container 클래스 정의: 슬라이드쇼 컨테이너의 스타일을 설정 */
+.slideshow-container {
+    display: flex; /* Flexbox를 사용하여 레이아웃 설정 */
+    justify-content: center; /* 가로 방향으로 가운데 정렬 */
+    max-width: 1920px; /* 최대 너비를 1920px로 설정 */
+    margin: 100px auto; /* 상단 100px, 자동으로 좌우 여백을 설정하여 가운데 정렬 */
+    padding: 20px; /* 내부 여백을 20px로 설정 */
+    position: relative; /* 상대 위치를 설정 */
+    flex-wrap: wrap; /* 화면이 좁을 때 Flexbox 아이템을 감싸도록 설정 */
+}
+
+/* .slideshow-description 클래스 정의: 슬라이드쇼 설명의 스타일을 설정 */
+.slideshow-description {
+    flex: 1; /* Flexbox 아이템의 성장 비율을 1로 설정 */
+    margin-top: 100px; /* 상단 마진을 100px로 설정 */
+    margin-right: 50px; /* 우측 마진을 50px로 설정 */
+    padding-right: 20px; /* 우측 패딩을 20px로 설정 */
+    color: white; /* 텍스트 색상을 흰색으로 설정 */
+    text-align: left; /* 텍스트를 왼쪽 정렬 */
+}
+
+/* .slideshow-description h2 요소 정의: 슬라이드쇼 설명 제목의 스타일을 설정 */
+.slideshow-description h2 {
+    font-size: 2em; /* 글꼴 크기를 2em으로 설정 */
+}
+
+/* .slideshow-description p 요소 정의: 슬라이드쇼 설명 단락의 스타일을 설정 */
+.slideshow-description p {
+    font-size: 1.2em; /* 글꼴 크기를 1.2em으로 설정 */
+}
+
+/* .slideshow-description a 요소 정의: 슬라이드쇼 설명 링크의 스타일을 설정 */
+.slideshow-description a {
+    display: inline-block; /* 인라인 블록 요소로 설정 */
+    margin-top: 10px; /* 상단 마진을 10px로 설정 */
+    color: #fff; /* 텍스트 색상을 흰색으로 설정 */
+    text-decoration: none; /* 텍스트 밑줄 제거 */
+    border: 1px solid #fff; /* 흰색 테두리를 설정 */
+    padding: 5px 10px; /* 상하 5px, 좌우 10px 패딩을 설정 */
+    border-radius: 5px; /* 모서리를 둥글게 설정 */
+}
+
+/* .swiper-container 클래스 정의: 스와이퍼 컨테이너의 스타일을 설정 */
+.swiper-container {
+    width: 900px; /* 너비를 900px로 설정 */
+    height: 600px; /* 높이를 600px로 설정 */
+    position: relative; /* 상대 위치를 설정 */
+    flex: 1; /* Flexbox 아이템의 성장 비율을 1로 설정 */
+}
+
+/* .swiper-slide 클래스 정의: 스와이퍼 슬라이드의 스타일을 설정 */
+.swiper-slide {
+    display: flex; /* Flexbox를 사용하여 레이아웃 설정 */
+    align-items: center; /* 세로 방향으로 가운데 정렬 */
+    justify-content: center; /* 가로 방향으로 가운데 정렬 */
+    transition: transform 0.3s ease-in-out; /* 트랜지션 효과를 설정 */
+    position: relative; /* 상대 위치를 설정 */
+    margin-right: -200px; /* 우측 마진을 -200px로 설정하여 다음 슬라이드와 겹치게 함 */
+}
+
+/* .swiper-slide-next 클래스 정의: 다음 슬라이드의 스타일을 설정 */
+.swiper-slide-next {
+    opacity: 0.5; /* 투명도를 0.5로 설정 */
+}
+
+/* .swiper-slide-next + .swiper-slide 클래스 정의: 다음 슬라이드 이후 슬라이드의 스타일을 설정 */
+.swiper-slide-next + .swiper-slide {
+    transform: scale(0.8); /* 크기를 0.8배 축소 */
+    opacity: 0.3; /* 투명도를 0.3으로 설정 */
+}
+
+/* .slide-content 클래스 정의: 슬라이드 콘텐츠의 스타일을 설정 */
+.slide-content {
+    display: flex; /* Flexbox를 사용하여 레이아웃 설정 */
+    flex-direction: column; /* 요소들을 세로 방향으로 배치 */
+    align-items: center; /* 가로 방향으로 가운데 정렬 */
+    justify-content: center; /* 세로 방향으로 가운데 정렬 */
+    width: 100%; /* 너비를 100%로 설정 */
+    height: 100%; /* 높이를 100%로 설정 */
+    position: relative; /* 상대 위치를 설정 */
+}
+
+/* .slide-image 클래스 정의: 슬라이드 이미지의 스타일을 설정 */
+.slide-image {
+    width: 100%; /* 너비를 100%로 설정 */
+    height: 600px; /* 높이를 600px로 설정 */
+    object-fit: cover; /* 이미지를 비율을 유지하면서 잘라내기 */
+    border-radius: 20px 20px 20px 20px; /* 모서리를 둥글게 설정 */
+}
+
+/* .slide-description 클래스 정의: 슬라이드 설명의 스타일을 설정 */
+.slide-description {
+    background: rgba(0, 0, 0, 0.7); /* 반투명 검은색 배경 */
+    color: white; /* 텍스트 색상을 흰색으로 설정 */
+    width: 100%; /* 너비를 100%로 설정 */
+    text-align: left; /* 텍스트를 왼쪽 정렬 */
+    padding: 10px; /* 패딩을 10px로 설정 */
+    box-sizing: border-box; /* 패딩과 테두리를 너비에 포함 */
+    font-size: 1.2em; /* 글꼴 크기를 1.2em으로 설정 */
+    word-wrap: break-word; /* 단어가 길 때 줄 바꿈 설정 */
+    border-radius: 0 0 20px 20px; /* 하단 모서리를 둥글게 설정 */
+    position: absolute; /* 절대 위치를 설정 */
+    bottom: 0; /* 하단 0 위치에 배치 */
+    left: 0; /* 좌측 0 위치에 배치 */
+}
+
+/* .custom-pagination 클래스 정의: 사용자 정의 페이지네이션의 스타일을 설정 */
+.custom-pagination {
+    display: flex; /* Flexbox를 사용하여 레이아웃 설정 */
+    justify-content: center; /* 가로 방향으로 가운데 정렬 */
+    align-items: center; /* 세로 방향으로 가운데 정렬 */
+    position: absolute; /* 절대 위치를 설정 */
+    bottom: 40px; /* 하단 40px 위치에 배치 */
+    left: 50%; /* 좌측 50% 위치에 배치 */
+    transform: translateX(-25%); /* 가로 방향으로 25% 이동 */
+    width: auto; /* 너비를 자동으로 설정 */
+    padding: 25px; /* 패딩을 25px로 설정 */
+}
+
+/* .swiper-pagination-bullet 클래스 정의: 페이지네이션 불렛의 스타일을 설정 */
+.custom-pagination .swiper-pagination-bullet {
+    width: 12px; /* 너비를 12px로 설정 */
+    height: 12px; /* 높이를 12px로 설정 */
+    margin: 0 5px; /* 좌우 5px 여백을 설정 */
+    background-color: transparent; /* 배경색을 투명으로 설정 */
+    border: 2px solid #fff; /* 흰색 테두리를 설정 */
+    border-radius: 50%; /* 테두리를 둥글게 설정 */
+    opacity: 0.7; /* 투명도를 0.7로 설정 */
+    transition: opacity 0.3s; /* 투명도 전환 애니메이션을 설정 */
+}
+
+/* .swiper-pagination-bullet-active 클래스 정의: 활성화된 페이지네이션 불렛의 스타일을 설정 */
+.custom-pagination .swiper-pagination-bullet-active {
+    background-color: #fff; /* 배경색을 흰색으로 설정 */
+    opacity: 1; /* 투명도를 1로 설정 */
+}
+
+/* 미디어 쿼리: 화면 너비가 800px 이하일 때 적용 */
+@media (max-width: 800px) {
+    /* .slideshow-container 클래스 정의: 슬라이드쇼 컨테이너의 스타일을 설정 */
+    .slideshow-container {
+        flex-direction: column; /* 요소들을 세로 방향으로 배치 */
+        margin: auto; /* 자동으로 여백을 설정하여 가운데 정렬 */
+    }
+
+    /* .slideshow-description 클래스 정의: 슬라이드쇼 설명의 스타일을 설정 */
+    .slideshow-description {
+        padding-right: 0; /* 우측 패딩을 0으로 설정 */
+        margin-bottom: 20px; /* 하단 마진을 20px로 설정 */
+        text-align: left; /* 텍스트를 왼쪽 정렬 */
+    }
+
+    /* .swiper-container 클래스 정의: 스와이퍼 컨테이너의 스타일을 설정 */
+    .swiper-container {
+        width: 600px; /* 너비를 600px로 설정 */
+        height: auto; /* 높이를 자동으로 설정 */
+    }
+
+    /* .slide-image 클래스 정의: 슬라이드 이미지의 스타일을 설정 */
+    .slide-image {
+        width: 100%; /* 너비를 100%로 설정 */
+        height: 600px; /* 높이를 600px로 설정 */
+    }
+
+    /* .slide-description 클래스 정의: 슬라이드 설명의 스타일을 설정 */
+    .slide-description {
+        font-size: 1em; /* 글꼴 크기를 1em으로 설정 */
+    }
+
+    /* .custom-pagination 클래스 정의: 사용자 정의 페이지네이션의 스타일을 설정 */
+    .custom-pagination {
+        display: none; /* 페이지네이션을 숨김 */
+    }
+}

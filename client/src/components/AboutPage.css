@@ -1,0 +1,84 @@
+/* .about-page 클래스 정의: 페이지의 레이아웃과 스타일을 설정 */
+.about-page {
+    margin: auto; /* 가운데 정렬 */
+    display: flex; /* Flexbox를 사용하여 레이아웃 설정 */
+    flex-direction: row; /* 요소들을 가로 방향으로 배치 */
+    flex-wrap: wrap; /* 화면 크기에 따라 요소들이 줄바꿈되도록 설정 */
+    min-height: calc(100vh - 120px); /* 페이지의 최소 높이를 설정 (header와 footer의 높이를 제외한 값) */
+    box-sizing: border-box; /* 박스 모델의 크기를 border-box로 설정 */
+    background-color: black; /* 배경색을 검은색으로 설정 */
+    padding-top: 60px; /* header 높이만큼 패딩 추가 */
+    padding-bottom: 60px; /* footer 높이만큼 패딩 추가 */
+}
+
+/* .left-column 클래스 정의: 왼쪽 열의 스타일을 설정 */
+.left-column {
+    width: 33%; /* 너비를 전체의 33%로 설정 */
+    overflow: hidden; /* 넘치는 콘텐츠를 숨김 */
+}
+
+/* .company-image 클래스 정의: 회사 이미지의 스타일을 설정 */
+.company-image {
+    width: 100%; /* 너비를 부모 요소에 맞게 100%로 설정 */
+    height: 100%; /* 높이를 부모 요소에 맞게 100%로 설정 */
+    object-fit: cover; /* 이미지 비율을 유지하면서 영역을 채우도록 설정 */
+}
+
+/* .right-column 클래스 정의: 오른쪽 열의 스타일을 설정 */
+.right-column {
+    width: 67%; /* 너비를 전체의 67%로 설정 */
+    padding: 20px; /* 내부 여백을 20px로 설정 */
+    box-sizing: border-box; /* 박스 모델의 크기를 border-box로 설정 */
+    overflow-y: auto; /* 세로 방향으로 넘치는 콘텐츠를 스크롤 가능하도록 설정 */
+}
+
+/* .about-content 클래스 정의: about 콘텐츠의 스타일을 설정 */
+.about-content {
+    max-width: 100%; /* 최대 너비를 100%로 설정 */
+    margin: auto; /* 가운데 정렬 */
+    text-align: left; /* 텍스트를 왼쪽 정렬 */
+}
+
+/* .section 클래스 정의: 섹션의 스타일을 설정 */
+.section {
+    margin-bottom: 10px; /* 섹션 하단 여백을 10px로 설정 */
+}
+
+/* .about-section 클래스 정의: about 섹션의 스타일을 설정 */
+.about-section {
+    border-top: 1px solid #ccc; /* 섹션 상단에 1px 실선 추가 */
+    margin-bottom: 15px; /* 섹션 하단 여백을 15px로 설정 */
+}
+
+/* h1, h2 태그 정의: 제목의 스타일을 설정 */
+h1, h2 {
+    font-size: 2em; /* 글꼴 크기를 2em으로 설정 */
+    margin-bottom: 10px; /* 하단 여백을 10px로 설정 */
+    color: white; /* 글자색을 흰색으로 설정 */
+}
+
+/* p 태그 정의: 단락의 스타일을 설정 */
+p {
+    margin-bottom: 10px; /* 하단 여백을 10px로 설정 */
+    color: white; /* 글자색을 흰색으로 설정 */
+}
+
+/* 미디어 쿼리: 화면 너비가 800px 이하일 때 적용되는 스타일 */
+@media (max-width: 800px) {
+    /* .about-page 클래스 정의: 페이지의 레이아웃과 스타일을 설정 */
+    .about-page {
+        flex-direction: column; /* 요소들을 세로 방향으로 배치 */
+        padding-top: 60px; /* header 높이만큼 패딩 추가 */
+        padding-bottom: 60px; /* footer 높이만큼 패딩 추가 */
+    }
+
+    /* .left-column과 .right-column 클래스 정의: 열의 스타일을 설정 */
+    .left-column, .right-column {
+        width: 100%; /* 너비를 전체의 100%로 설정 */
+    }
+
+    /* .company-image 클래스 정의: 회사 이미지의 스타일을 설정 */
+    .company-image {
+        height: auto; /* 높이를 자동으로 설정 */
+    }
+}

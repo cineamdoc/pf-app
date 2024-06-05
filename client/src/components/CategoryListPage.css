@@ -1,0 +1,186 @@
+/* .category-list-page 클래스 정의: 페이지의 레이아웃과 스타일을 설정 */
+.category-list-page {
+    text-align: center; /* 텍스트를 가운데 정렬 */
+    padding: 100px 20px 40px 20px; /* 상단 100px, 좌우 20px, 하단 40px 패딩을 설정 (navbar 높이를 고려) */
+    background-color: #000000; /* 배경색을 검은색으로 설정 */
+    color: white; /* 텍스트 색상을 흰색으로 설정 */
+    min-height: calc(100vh - 120px); /* 페이지의 최소 높이를 설정 (header와 footer의 높이를 제외한 값) */
+    box-sizing: border-box; /* 박스 모델의 크기를 border-box로 설정 */
+}
+
+/* .category-list-page h1 요소 스타일 설정 */
+.category-list-page h1 {
+    font-size: 36px; /* 글꼴 크기를 36px로 설정 */
+    margin-bottom: 20px; /* 하단 여백을 20px로 설정 */
+}
+
+/* .category-list-page h2 요소 스타일 설정 */
+.category-list-page h2 {
+    font-size: 24px; /* 글꼴 크기를 24px로 설정 */
+    margin-bottom: 40px; /* 하단 여백을 40px로 설정 */
+}
+
+/* .categories 클래스 정의: 카테고리 버튼들을 포함하는 컨테이너 */
+.categories {
+    display: flex; /* Flexbox를 사용하여 레이아웃 설정 */
+    justify-content: space-around; /* 버튼들을 공간을 균등하게 배치 */
+    margin-bottom: 20px; /* 하단 여백을 20px로 설정 */
+    gap: 10px; /* 버튼 간격을 10px로 설정 */
+}
+
+/* .category-button 클래스 정의: 카테고리 버튼 스타일을 설정 */
+.category-button {
+    position: relative; /* 위치를 상대적으로 설정 */
+    width: 400px; /* 너비를 600px로 설정 */
+    height: 120px; /* 높이를 120px로 설정 */
+    background-color: #4a4a4a; /* 배경색을 회색으로 설정 */
+    color: white; /* 텍스트 색상을 흰색으로 설정 */
+    border: none; /* 테두리를 없앰 */
+    border-radius: 10px; /* 모서리를 둥글게 설정 */
+    font-size: 20px; /* 글꼴 크기를 20px로 설정 */
+    cursor: pointer; /* 마우스 커서를 포인터로 설정 */
+    transition: transform 0.3s, background-color 0.3s; /* 트랜지션 효과를 설정 */
+    display: flex; /* Flexbox를 사용하여 레이아웃 설정 */
+    align-items: center; /* 세로 방향으로 가운데 정렬 */
+    justify-content: center; /* 가로 방향으로 가운데 정렬 */
+    text-align: center; /* 텍스트를 가운데 정렬 */
+}
+
+/* .category-button:hover: 버튼에 마우스를 올렸을 때 스타일을 설정 */
+.category-button:hover {
+    transform: scale(1.07); /* 크기를 1.07배로 확대 */
+    background-color: #6a6a6a; /* 배경색을 밝은 회색으로 설정 */
+}
+
+/* .request-button 클래스 정의: 카테고리 버튼 내부의 요청 버튼 스타일을 설정 */
+.request-button {
+    position: absolute; /* 위치를 절대적으로 설정 */
+    bottom: 0; /* 하단에 배치 */
+    left: 0; /* 좌측에 배치 */
+    width: 100%; /* 너비를 100%로 설정 */
+    height: 20%; /* 높이를 20%로 설정 */
+    background-color: rgba(255, 255, 255, 0.5); /* 반투명 흰색 배경 */
+    color: black; /* 텍스트 색상을 검은색으로 설정 */
+    border: none; /* 테두리를 없앰 */
+    border-radius: 0 0 10px 10px; /* 하단 모서리를 둥글게 설정 */
+    font-size: 14px; /* 글꼴 크기를 14px로 설정 */
+    cursor: pointer; /* 마우스 커서를 포인터로 설정 */
+    opacity: 0; /* 초기 투명도를 0으로 설정 */
+    transition: opacity 0.3s; /* 투명도 트랜지션 효과를 설정 */
+    display: block; /* 블록 요소로 설정 */
+    align-items: flex-start; /* 글씨를 위쪽으로 정렬 */
+    padding-top: 5px; /* 패딩으로 글씨 위치 조정 */
+}
+
+/* .category-button:hover .request-button: 버튼에 마우스를 올렸을 때 요청 버튼 스타일을 설정 */
+.category-button:hover .request-button {
+    opacity: 70%; /* 투명도를 70%로 설정 */
+}
+
+/* .request-list 클래스 정의: 요청 목록 컨테이너 스타일을 설정 */
+.request-list {
+    margin-top: 20px; /* 상단 여백을 20px로 설정 */
+}
+
+/* .request-item 클래스 정의: 요청 항목 스타일을 설정 */
+.request-item {
+    display: flex; /* Flexbox를 사용하여 레이아웃 설정 */
+    justify-content: space-between; /* 항목들을 공간을 균등하게 배치 */
+    background-color: #3a3a3a; /* 배경색을 어두운 회색으로 설정 */
+    color: white; /* 텍스트 색상을 흰색으로 설정 */
+    padding: 10px; /* 내부 여백을 10px로 설정 */
+    margin-bottom: 10px; /* 하단 여백을 10px로 설정 */
+    border-radius: 5px; /* 모서리를 둥글게 설정 */
+    cursor: pointer; /* 마우스 커서를 포인터로 설정 */
+    transition: background-color 0.3s; /* 배경색 트랜지션 효과를 설정 */
+}
+
+/* .request-item:hover: 항목에 마우스를 올렸을 때 스타일을 설정 */
+.request-item:hover {
+    background-color: #4a4a4a; /* 배경색을 밝은 회색으로 설정 */
+}
+
+/* .request-item span 클래스 정의: 요청 항목의 텍스트 스타일을 설정 */
+.request-item span {
+    flex: 1; /* Flexbox 아이템의 성장 비율을 1로 설정 */
+    text-align: center; /* 텍스트를 가운데 정렬 */
+}
+
+/* .category-icon 클래스 정의: 카테고리 아이콘 스타일을 설정 */
+.category-icon {
+    font-weight: bold; /* 글꼴을 굵게 설정 */
+}
+
+/* .request-title 클래스 정의: 요청 제목 스타일을 설정 */
+.request-title {
+    flex: 2; /* Flexbox 아이템의 성장 비율을 2로 설정 */
+}
+
+/* .request-author 클래스 정의: 요청 작성자 스타일을 설정 */
+.request-author {
+    font-style: italic; /* 글꼴 스타일을 이탤릭체로 설정 */
+}
+
+/* 반응형 웹 설정: 화면 너비가 768px 이하일 때 적용 */
+@media (max-width: 768px) {
+    /* .categories 클래스 정의: 카테고리 버튼 컨테이너 스타일을 설정 */
+    .categories {
+        flex-direction: column; /* 요소들을 세로 방향으로 배치 */
+        gap: 20px; /* 버튼 간격을 20px로 설정 */
+    }
+
+    /* .category-button 클래스 정의: 카테고리 버튼 스타일을 설정 */
+    .category-button {
+        width: 100%; /* 너비를 100%로 설정 */
+        height: 80px; /* 높이를 80px로 설정 */
+        font-size: 18px; /* 글꼴 크기를 18px로 설정 */
+    }
+
+    /* .request-button 클래스 정의: 요청 버튼 스타일을 설정 */
+    .request-button {
+        font-size: 14px; /* 글꼴 크기를 14px로 설정 */
+        height: 25%; /* 높이를 25%로 설정 */
+    }
+}
+
+/* 반응형 웹 설정: 화면 너비가 480px 이하일 때 적용 */
+@media (max-width: 480px) {
+    /* .category-list-page h1 요소 스타일을 설정 */
+    .category-list-page h1 {
+        font-size: 28px; /* 글꼴 크기를 28px로 설정 */
+    }
+
+    /* .category-list-page h2 요소 스타일을 설정 */
+    .category-list-page h2 {
+        font-size: 20px; /* 글꼄 크기를 20px로 설정 */
+    }
+
+    /* .category-button 클래스 정의: 카테고리 버튼 스타일을 설정 */
+    .category-button {
+        width: 100%; /* 너비를 100%로 설정 */
+        height: 70px; /* 높이를 70px로 설정 */
+        font-size: 16px; /* 글꼴 크기를 16px로 설정 */
+    }
+
+    /* .request-button 클래스 정의: 요청 버튼 스타일을 설정 */
+    .request-button {
+        font-size: 12px; /* 글꼴 크기를 12px로 설정 */
+        height: 30%; /* 높이를 30%로 설정 */
+    }
+}
+
+/* 큰 화면에서 카테고리 버튼 크기 조정 */
+@media (min-width: 1200px) {
+    /* .category-button 클래스 정의: 카테고리 버튼 스타일을 설정 */
+    .category-button {
+        width: 400px; /* 너비를 600px로 설정 */
+        height: 120px; /* 높이를 120px로 설정 */
+        font-size: 24px; /* 글꼴 크기를 24px로 설정 */
+    }
+
+    /* .request-button 클래스 정의: 요청 버튼 스타일을 설정 */
+    .request-button {
+        font-size: 18px; /* 글꼴 크기를 18px로 설정 */
+        height: 25%; /* 높이를 25%로 설정 */
+    }
+}

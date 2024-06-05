@@ -1,0 +1,70 @@
+/* .request-page 클래스 정의: 요청 페이지의 스타일을 설정 */
+.request-page {
+    padding: 80px 20px 40px 20px; /* 상단 80px, 좌우 20px, 하단 40px 패딩을 설정 (navbar 높이를 고려) */
+    background-color: #000000; /* 배경색을 검은색으로 설정 */
+    color: #efefef; /* 텍스트 색상을 밝은 회색으로 설정 */
+    min-height: calc(100vh - 120px); /* 전체 높이에서 header와 footer의 높이를 제외한 높이로 설정 (navbar: 60px, footer: 60px) */
+    box-sizing: border-box; /* 패딩과 테두리를 너비에 포함 */
+}
+
+/* .request-content 클래스 정의: 요청 콘텐츠의 스타일을 설정 */
+.request-content {
+    max-width: 800px; /* 최대 너비를 800px로 설정 */
+    margin: 0 auto; /* 자동으로 좌우 여백을 설정하여 가운데 정렬 */
+    text-align: center; /* 텍스트를 가운데 정렬 */
+}
+
+/* .categories button 요소 정의: 카테고리 버튼의 스타일을 설정 */
+.categories button {
+    margin: 10px; /* 외부 여백을 10px로 설정 */
+    padding: 10px 20px; /* 상하 10px, 좌우 20px 패딩을 설정 */
+    background-color: #444; /* 배경색을 짙은 회색으로 설정 */
+    color: #fff; /* 텍스트 색상을 흰색으로 설정 */
+    border: none; /* 테두리를 없앰 */
+    cursor: pointer; /* 마우스 커서를 포인터로 설정 */
+}
+
+/* .request-form 클래스 정의: 요청 폼의 스타일을 설정 */
+.request-form {
+    margin-top: 20px; /* 상단 여백을 20px로 설정 */
+}
+
+/* .request-form 요소들 정의: input과 textarea 요소의 스타일을 설정 */
+.request-form input,
+.request-form textarea {
+    display: block; /* 블록 요소로 설정 */
+    width: 100%; /* 너비를 100%로 설정 */
+    margin: 10px 0; /* 상하 10px 여백을 설정 */
+    padding: 10px; /* 패딩을 10px로 설정 */
+    background-color: #222; /* 배경색을 짙은 회색으로 설정 */
+    color: #fff; /* 텍스트 색상을 흰색으로 설정 */
+    border: 1px solid #444; /* 테두리를 밝은 회색으로 설정 */
+}
+
+/* .request-form button 요소 정의: 폼 버튼의 스타일을 설정 */
+.request-form button {
+    padding: 10px 20px; /* 상하 10px, 좌우 20px 패딩을 설정 */
+    background-color: #444; /* 배경색을 짙은 회색으로 설정 */
+    color: #fff; /* 텍스트 색상을 흰색으로 설정 */
+    border: none; /* 테두리를 없앰 */
+    cursor: pointer; /* 마우스 커서를 포인터로 설정 */
+}
+
+/* .request-list 클래스 정의: 요청 목록의 스타일을 설정 */
+.request-list {
+    margin-top: 20px; /* 상단 여백을 20px로 설정 */
+}
+
+/* .request-item 클래스 정의: 요청 항목의 스타일을 설정 */
+.request-item {
+    display: flex; /* Flexbox를 사용하여 레이아웃 설정 */
+    justify-content: space-between; /* 요소들을 양 끝으로 배치 */
+    padding: 10px; /* 패딩을 10px로 설정 */
+    background-color: #333; /* 배경색을 어두운 회색으로 설정 */
+    margin: 10px 0; /* 상하 10px 여백을 설정 */
+}
+
+/* .category-icon 클래스 정의: 카테고리 아이콘의 스타일을 설정 */
+.category-icon {
+    margin-right: 10px; /* 우측 여백을 10px로 설정 */
+}
