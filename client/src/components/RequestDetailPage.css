@@ -1,0 +1,118 @@
+/* .request-detail-page-wrapper 클래스 정의: 요청 상세 페이지 래퍼의 스타일을 설정 */
+.request-detail-page-wrapper {
+    background-color: #000; /* 배경색을 검정색으로 설정 */
+    display: flex; /* Flexbox를 사용하여 레이아웃 설정 */
+    justify-content: center; /* 가로 방향으로 가운데 정렬 */
+    align-items: center; /* 세로 방향으로 가운데 정렬 */
+    min-height: calc(100vh - 120px); /* 전체 높이에서 navbar와 footer의 높이를 제외한 높이로 설정 */
+    padding: 30px 20px 20px 20px; /* 상단 30px, 좌우 20px, 하단 20px 패딩을 설정 */
+}
+
+/* .request-detail-page 클래스 정의: 요청 상세 페이지의 스타일을 설정 */
+.request-detail-page {
+    max-width: 1200px; /* 최대 너비를 1200px로 설정 */
+    margin: 0 auto; /* 자동으로 좌우 여백을 설정하여 가운데 정렬 */
+    color: #fff; /* 텍스트 색상을 흰색으로 설정 */
+    background-color: #000000; /* 배경색을 검정색으로 설정 */
+    border-radius: 10px; /* 모서리를 둥글게 설정 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자를 추가하여 입체감 부여 */
+    width: 100%; /* 너비를 100%로 설정 */
+    box-sizing: border-box; /* 패딩과 테두리를 너비에 포함 */
+    padding: 20px; /* 패딩을 20px로 설정 */
+    display: flex; /* Flexbox를 사용하여 레이아웃 설정 */
+    flex-direction: column; /* 요소들을 세로 방향으로 배치 */
+    justify-content: center; /* 세로 방향으로 가운데 정렬 */
+}
+
+/* .request-detail-page h1 요소 정의: 제목의 스타일을 설정 */
+.request-detail-page h1 {
+    font-size: 2rem; /* 글꼴 크기를 2rem으로 설정 */
+    margin-bottom: 20px; /* 하단 여백을 20px로 설정 */
+    text-align: left; /* 텍스트를 왼쪽 정렬 */
+}
+
+/* .detail-item 클래스 정의: 상세 항목의 스타일을 설정 */
+.request-detail-page .detail-item {
+    display: flex; /* Flexbox를 사용하여 레이아웃 설정 */
+    justify-content: space-between; /* 요소들을 양 끝으로 배치 */
+    background-color: #444; /* 배경색을 짙은 회색으로 설정 */
+    padding: 10px; /* 패딩을 10px로 설정 */
+    border-radius: 5px; /* 모서리를 둥글게 설정 */
+    margin-bottom: 10px; /* 하단 여백을 10px로 설정 */
+}
+
+/* .detail-item span 요소 정의: 상세 항목 텍스트의 스타일을 설정 */
+.request-detail-page .detail-item span {
+    flex: 1; /* Flexbox 아이템의 성장 비율을 1로 설정 */
+    text-align: left; /* 텍스트를 왼쪽 정렬 */
+}
+
+/* .detail-item strong 요소 정의: 상세 항목 제목의 스타일을 설정 */
+.request-detail-page .detail-item strong {
+    margin-right: 10px; /* 우측 여백을 10px로 설정 */
+}
+
+/* .buttons 클래스 정의: 버튼 그룹의 스타일을 설정 */
+.buttons {
+    display: flex; /* Flexbox를 사용하여 레이아웃 설정 */
+    justify-content: flex-end; /* 요소들을 가로 방향 끝으로 배치 */
+    gap: 10px; /* 버튼 간의 간격을 10px로 설정 */
+    margin-top: 20px; /* 상단 여백을 20px로 설정 */
+}
+
+/* button 요소 정의: 버튼의 스타일을 설정 */
+button {
+    padding: 10px 20px; /* 상하 10px, 좌우 20px 패딩을 설정 */
+    border: none; /* 테두리를 없앰 */
+    border-radius: 5px; /* 모서리를 둥글게 설정 */
+    font-size: 1rem; /* 글꼴 크기를 1rem으로 설정 */
+    cursor: pointer; /* 마우스 커서를 포인터로 설정 */
+}
+
+/* .back-button 클래스 정의: 뒤로가기 버튼의 스타일을 설정 */
+.back-button {
+    background-color: #555; /* 배경색을 중간 회색으로 설정 */
+    color: #fff; /* 텍스트 색상을 흰색으로 설정 */
+}
+
+/* .edit-button 클래스 정의: 편집 버튼의 스타일을 설정 */
+.edit-button {
+    background-color: #3a3a3a; /* 배경색을 짙은 회색으로 설정 */
+    color: #fff; /* 텍스트 색상을 흰색으로 설정 */
+}
+
+/* button:hover 정의: 버튼에 마우스를 올렸을 때 스타일을 설정 */
+button:hover {
+    opacity: 0.9; /* 투명도를 0.9로 설정 */
+}
+
+/* 미디어 쿼리: 화면 너비가 600px 이하일 때 적용 */
+@media (max-width: 600px) {
+    /* .request-detail-page 클래스 정의: 요청 상세 페이지의 스타일을 설정 */
+    .request-detail-page {
+        padding: 15px; /* 패딩을 15px로 설정 */
+    }
+
+    /* .request-detail-page h1 요소 정의: 제목의 스타일을 설정 */
+    .request-detail-page h1 {
+        font-size: 1.5rem; /* 글꼴 크기를 1.5rem으로 설정 */
+    }
+
+    /* .detail-item 클래스 정의: 상세 항목의 스타일을 설정 */
+    .request-detail-page .detail-item {
+        flex-direction: column; /* 요소들을 세로 방향으로 배치 */
+        align-items: flex-start; /* 요소들을 가로 방향 시작점에 정렬 */
+    }
+
+    /* .detail-item span 요소 정의: 상세 항목 텍스트의 스타일을 설정 */
+    .request-detail-page .detail-item span {
+        width: 100%; /* 너비를 100%로 설정 */
+        text-align: left; /* 텍스트를 왼쪽 정렬 */
+    }
+
+    /* button 요소 정의: 버튼의 스타일을 설정 */
+    button {
+        padding: 8px 16px; /* 상하 8px, 좌우 16px 패딩을 설정 */
+        font-size: 0.875rem; /* 글꼴 크기를 0.875rem으로 설정 */
+    }
+}

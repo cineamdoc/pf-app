@@ -1,0 +1,11 @@
+/* .footer 클래스 정의: 푸터 영역의 스타일을 설정 */
+.footer {
+    margin: 0; /* 외부 여백을 0으로 설정 */
+    padding: 20px; /* 내부 여백을 20px로 설정 */
+    color: white; /* 텍스트 색상을 흰색으로 설정 */
+    text-align: center; /* 텍스트를 가운데 정렬 */
+    background-color: black; /* 배경색을 검은색으로 설정 */
+    position: fixed; /* 위치를 고정하여 페이지의 하단에 고정 */
+    bottom: 0; /* 하단에서 0px 떨어진 위치에 배치 */
+    width: 100%; /* 너비를 100%로 설정하여 페이지 전체 너비를 차지 */
+}
