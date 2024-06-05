@@ -1,0 +1,8 @@
+# dependencies
+/api/node_modules
+/client/node_modules
+
+# misc
+.DS_Store
+/api/.env
+/client/.env
